@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FINALLY.窗体;
 
 namespace FINALLY
 {
@@ -16,7 +17,9 @@ namespace FINALLY
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            getonline getonline = new getonline();
+            getonline.Show();
+            Application.Run();
         }
     }
 }
